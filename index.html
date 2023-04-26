@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Книга Драконов</title>
+    <link rel="stylesheet" href="css/wow_book.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="#">
+            <span class="material-icons" id="thumbs">view_list</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <a href="#" id="first"
+        ><span class="material-icons">skip_previous</span></a
+      >
+      <a href="#" id="prev">
+        <span class="material-icons">
+          navigate_before
+        </span>
+      </a>
+      <div id="mybook">
+        <!-- <div><img src="pages/cover.png" alt="" /></div>
+        V2
+        <div><img src="pages/0.png" alt="" /></div> -->
+        <!-- <div><img src="pages/cover2.png" alt="" /></div> -->
+        V1
+        <div><img src="pages/Cover3.png" alt="" /></div>
+        <!--V3-->
+        <div><img src="pages/1.png" alt="" /></div>
+        <div><img src="pages/2.png" alt="" /></div>
+        <div><img src="pages/3.png" alt="" /></div>
+        <div><img src="pages/4.png" alt="" /></div>
+        <div><img src="pages/5.png" alt="" /></div>
+        <div><img src="pages/6.png" alt="" /></div>
+        <div><img src="pages/7.png" alt="" /></div>
+        <div><img src="pages/8.png" alt="" /></div>
+        <div><img src="pages/9.png" alt="" /></div>
+        <div><img src="pages/10.png" alt="" /></div>
+        <div><img src="pages/11.png" alt="" /></div>
+        <div><img src="pages/12.png" alt="" /></div>
+        <div><img src="pages/13.png" alt="" /></div>
+        <div><img src="pages/14.png" alt="" /></div>
+        <div><img src="pages/15.png" alt="" /></div>
+        <div><img src="pages/16.png" alt="" /></div>
+        <div><img src="pages/17.png" alt="" /></div>
+        <div><img src="pages/18.png" alt="" /></div>
+        <div><img src="pages/19.png" alt="" /></div>
+        <div><img src="pages/20.png" alt="" /></div>
+        <div><img src="pages/21.png" alt="" /></div>
+        <div><img src="pages/22.png" alt="" /></div>
+        <div><img src="pages/23.png" alt="" /></div>
+        <div><img src="pages/24.png" alt="" /></div>
+        <div><img src="pages/25.png" alt="" /></div>
+        <div><img src="pages/26.png" alt="" /></div>
+        <div><img src="pages/27.png" alt="" /></div>
+        <div><img src="pages/28.png" alt="" /></div>
+        <div><img src="pages/29.png" alt="" /></div>
+        <div><img src="pages/back_cover.png" alt="" /></div>
+      </div>
+      <a href="#" id="next">
+        <span class="material-icons">
+          navigate_next
+        </span>
+      </a>
+      <a href="#" id="last"><span class="material-icons">skip_next</span></a>
+    </main>
+    <script src="./js/jquery-1.9.1.min.js"></script>
+    <script src="./js/wow_book.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#mybook").wowBook({
+          height: 850,
+          width: 1245,
+          hardcovers: true,
+          turnPageDuration: 500,
+          flipSound: false,
+          numberedPages: [1, -2],
+          centeredWhenClosed: true,
+          controls: {
+            next: "#next",
+            back: "#prev",
+            first: "#first",
+            last: "#last",
+            thumbnails: "#thumbs",
+          },
+          thumbnailsPosition: "bottom",
+        });
+      });
+    </script>
+  </body>
+</html>
